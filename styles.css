@@ -5,13 +5,23 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: url(Images\7b56a49b35f83813563c5b4ea48b3b72.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
-    background: red;
+    padding: 20px 100px;
+    background: rgb(255, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +45,7 @@ header{
 }
 
 .navigation a::after {
-    content: '';
+    content: none;
     position: absolute;
     width: 100%;
     height: 3px;
@@ -65,7 +75,7 @@ header{
     color: #fff;
     font-weight: 500;
     margin-left: 40px;
-    transition:  .5s;
+    transition: .5s;
 }
 
 .navigation .buttonLog::hover {
