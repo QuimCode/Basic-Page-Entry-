@@ -8,10 +8,11 @@
 body {
     display: flex;
     justify-content: center;
-    box-sizing: border-box;
+    align-items: center;
     min-height: 100vh;
-    background: url(Images\7b56a49b35f83813563c5b4ea48b3b72.jpg) no-repeat;
-    background-size: cover;
+    background-image: url(Images\compute-ea4c57a4.png);
+    background-repeat: no-repeat;
+    background-size:contain;
     background-position: center;
 }
 
@@ -21,7 +22,7 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: rgb(255, 0, 0);
+    background: rgba(255, 0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,7 @@ header{
 }
 
 .navigation a::after {
-    content: none;
+    content: '';
     position: absolute;
     width: 100%;
     height: 3px;
@@ -58,7 +59,7 @@ header{
     transition: transform .5s;
 }
 
-.navigation a::hover::after {
+.navigation a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -78,7 +79,7 @@ header{
     transition: .5s;
 }
 
-.navigation .buttonLog::hover {
+.navigation .buttonLog:hover {
     background: #fff;
     color: black;
 }
