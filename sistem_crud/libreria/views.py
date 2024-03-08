@@ -7,5 +7,5 @@ from django.http import HttpResponse
 def inicio(request):
     return HttpResponse("<h1>Bienvenido Developer</h1>")
 
-def carga_index(request):
-    return render(request, 'paginas/index.html')
+def carga_login(request):
+    return render(request, 'library/login.html')
